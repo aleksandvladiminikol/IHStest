@@ -1,0 +1,20 @@
+<h1>Books</h1>
+<table border=1>
+    <theader>
+        <tr>
+            <td><b>Author</b></td>
+            <td><b>Created date</b></td>
+            <td><b>Paragraph</b></td>
+        </tr>
+    </theader>
+    <tbody>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.author }}</td>
+        <td>{{ item.date }}</td>
+        <td>{{ item.paragraph }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</code></pre>

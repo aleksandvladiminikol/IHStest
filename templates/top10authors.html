@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<h1>Top-10 authors</h1>
+<table border=1>
+    <theader>
+        <tr>
+            <td><b>Author</b></td>
+            <td><b>Sum of books</b></td>
+        </tr>
+    </theader>
+    <tbody>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.author }}</td>
+        <td>{{ item.countText }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</code></pre>

@@ -1,0 +1,18 @@
+<h1>Histogram</h1>
+<table border=1>
+    <theader>
+        <tr>
+            <td><b>Month</b></td>
+            <td><b>Sum of books</b></td>
+        </tr>
+    </theader>
+    <tbody>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.year }}.{{ item.month }}</td>
+        <td>{{ item.count }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</code></pre>
